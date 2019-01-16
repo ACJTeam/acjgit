@@ -446,7 +446,6 @@ lib/python/Plugins/SystemPlugins/DeviceManager/icons/Makefile
 lib/python/Plugins/SystemPlugins/DiseqcTester/Makefile
 lib/python/Plugins/SystemPlugins/DiseqcTester/meta/Makefile
 lib/python/Plugins/SystemPlugins/FastScan/Makefile
-lib/python/Plugins/SystemPlugins/GBAspectRatioSwitch/Makefile
 lib/python/Plugins/SystemPlugins/HdmiCEC/Makefile
 lib/python/Plugins/SystemPlugins/Hotplug/Makefile
 lib/python/Plugins/SystemPlugins/Hotplug/meta/Makefile
@@ -462,7 +461,6 @@ lib/python/Plugins/SystemPlugins/Satfinder/Makefile
 lib/python/Plugins/SystemPlugins/Satfinder/meta/Makefile
 lib/python/Plugins/SystemPlugins/SkinSelector/Makefile
 lib/python/Plugins/SystemPlugins/SkinSelector/meta/Makefile
-lib/python/Plugins/SystemPlugins/SoftcamStartup/Makefile
 lib/python/Plugins/SystemPlugins/SoftwareManager/Makefile
 lib/python/Plugins/SystemPlugins/SoftwareManager/meta/Makefile
 lib/python/Plugins/SystemPlugins/SwapManager/Makefile
