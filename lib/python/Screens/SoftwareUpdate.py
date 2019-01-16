@@ -30,7 +30,7 @@ class UpdatePlugin(Screen, ProtectedScreen):
 		Screen.__init__(self, session)
 		ProtectedScreen.__init__(self)
 
-		self.sliderPackages = { "gigablue-": 1, "enigma2": 2, "teamblue-": 3 }
+		self.sliderPackages = { "gigablue-": 1, "enigma2": 2, "OpenACJ-": 3 }
 
 		self.setTitle(_("Software update"))
 		self.slider = Slider(0, 4)
@@ -117,7 +117,7 @@ class UpdatePlugin(Screen, ProtectedScreen):
 
 	def showDisclaimer(self, justShow=False):
 		if config.usage.show_update_disclaimer.value or justShow:
-			message = _("With this disclaimer the teamBlue team is informing you that we are working with nightly builds and it might be that after the upgrades your set top box \
+			message = _("With this disclaimer the OpenACJ is informing you that we are working with nightly builds and it might be that after the upgrades your set top box \
 is not anymore working as expected. Therefore it is recommended to create backups. If something went wrong you can easily and quickly restore. \
 If you discover 'bugs' please keep them reported on www.altoconsejojedi.es\n\nDo you understand this?")
 			list = not justShow and [(_("no"), False), (_("yes"), True), (_("yes") + " " + _("and never show this message again"), "never")] or []

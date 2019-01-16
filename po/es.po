@@ -1,15 +1,15 @@
-# Language file teamBlue enigma2.
+# Language file OpenACJ enigma2.
 # Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the package.
-# teamBlue, 2015.
+# OpenACJ, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: enigma2 teamBlue\n"
+"Project-Id-Version: enigma2 OpenACJ\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 19:40+0100\n"
 "PO-Revision-Date: 2015-02-09 16:12+0100\n"
-"Last-Translator: jrodzar <jrodzar@gmail.com>\n"
+"Last-Translator: acjteam <altoconsejojedi@gmail.es>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -1909,7 +1909,7 @@ msgstr "Bus: "
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "Por defecto, SNR en dB (cuando sintoniz. soporte). Esta configuración obligar a mostrar SNR en modo porcentaje."
 
-msgid "By teamBlue Image Team"
+msgid "By OpenACJ Image Team"
 msgstr ""
 
 #
@@ -5097,7 +5097,7 @@ msgstr "Alemán"
 
 #, fuzzy
 msgid "Get your Weather ID on weather.open-store.net"
-msgstr "Ponte tu ID de tiempo weather.open-store.net/gigablue"
+msgstr "Ponte tu ID de tiempo weather.open-store.net"
 
 #
 msgid "Getting plugin information. Please wait..."
@@ -6202,7 +6202,7 @@ msgid "Latest Commits"
 msgstr "Las últimas confirmaciones"
 
 #, python-format
-msgid "Latest available teamBlue %s build is from: %s"
+msgid "Latest available OpenACJ %s build is from: %s"
 msgstr ""
 
 #
@@ -7396,7 +7396,7 @@ msgstr ""
 
 #
 #
-msgid "No, just start my GigaBlue"
+msgid "No, just start my STB"
 msgstr "No, debe reiniciar desde el principio"
 
 msgid "No, never"
@@ -13369,12 +13369,12 @@ msgstr "Ver grabaciones..."
 #, python-format
 msgid ""
 "We are really sorry. Your receiver encountered a software problem, and needs to be restarted.\n"
-"Please send the logfile %senigma2_crash_xxxxxx.log to www.teamblue.tech.\n"
+"Please send the logfile %senigma2_crash_xxxxxx.log to www.altoconsejojedi.es.\n"
 "Your receiver restarts in 10 seconds!\n"
 "Component: enigma2"
 msgstr ""
 
-msgid "Weather GigaBlue Pax"
+msgid "Weather GigabluePax Pax"
 msgstr ""
 
 msgid "Weather ID"
@@ -13413,8 +13413,8 @@ msgstr ""
 "\n"
 "Vaya al final, pulse OK, seleccione 'corte final'. Eso es todo."
 
-msgid "Welcome to the Image restore wizard. The wizard will assist you in upgrading the firmware of your GigaBlue by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
-msgstr "Bienvenido al asistente de restauración de imagen. El asistente le ayudará a actualizar el firmware de tu GigaBlue proporcionando una instalación de copia de seguridad de la configuración actual y una breve explicación de cómo actualizar el firmware."
+msgid "Welcome to the Image restore wizard. The wizard will assist you in upgrading the firmware of your STB by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
+msgstr "Bienvenido al asistente de restauración de imagen. El asistente le ayudará a actualizar el firmware de tu STB proporcionando una instalación de copia de seguridad de la configuración actual y una breve explicación de cómo actualizar el firmware."
 
 #
 #
@@ -13714,11 +13714,11 @@ msgid "With popup"
 msgstr "Con popup"
 
 msgid ""
-"With this disclaimer the teamBlue team is informing you that we are working with nightly builds and it might be that after the upgrades your set top box is not anymore working as expected. Therefore it is recommended to create backups. If something went wrong you can easily and quickly restore. If you discover 'bugs' please keep them reported on www.teamblue.tech.\n"
+"With this disclaimer the OpenACJ team is informing you that we are working with nightly builds and it might be that after the upgrades your set top box is not anymore working as expected. Therefore it is recommended to create backups. If something went wrong you can easily and quickly restore. If you discover 'bugs' please keep them reported on www.altoconsejojedi.es\n"
 "\n"
 "Do you understand this?"
 msgstr ""
-"Con esta renuncia al equipo de teamBlue es informarle que estamos trabajando con compilaciones nocturnas y podría ser que después de las mejoras de su decodificador no ya funciona como se esperaba. Por lo tanto, se recomienda realizar copias de seguridad. Si algo sale mal puede fácil y rápidamente restaurar. ¿Cuando descubres 'bugs' por favor mantén informó sobre www.gigablue-support.com.\n"
+"Con esta renuncia al equipo de OpenACJ es informarle que estamos trabajando con compilaciones nocturnas y podría ser que después de las mejoras de su decodificador no ya funciona como se esperaba. Por lo tanto, se recomienda realizar copias de seguridad. Si algo sale mal puede fácil y rápidamente restaurar. ¿Cuando descubres 'bugs' por favor mantén informó sobre www.altoconsejojedi.es.\n"
 "\n"
 "Entiendes esto?"
 
@@ -14006,7 +14006,7 @@ msgstr ""
 "¿Desea eliminarlo ahora?"
 
 msgid "Your GigaBlue is shutting down. Please stand by..."
-msgstr "Su GigaBlue se está cerrando. Por favor espere..."
+msgstr "Su STB se está cerrando. Por favor espere..."
 
 msgid ""
 "Your GigaBlue will now be halted.\n"
@@ -14014,9 +14014,9 @@ msgid ""
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
 msgstr ""
-"Su GigaBlue Ahora se detendrá.\n"
+"Su STB Ahora se detendrá.\n"
 "Se necesita que conecte su unidad USB flash con su imagen a restaurar.\n"
-"Encienda su GigaBlue y usted puede flashear su imagen de copia de seguridad.\n"
+"Encienda su STB y usted puede flashear su imagen de copia de seguridad.\n"
 "Después de flashear puede restaurar la configuración."
 
 msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"

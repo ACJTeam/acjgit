@@ -1499,53 +1499,6 @@ class UpdatePlugin(Screen):
 			self.close()
 			return
 
-	#def checkTraficLight(self):
-	#	from urllib import urlopen
-	#	import socket
-	#	currentTimeoutDefault = socket.getdefaulttimeout()
-	#	socket.setdefaulttimeout(3)
-	#	message = ""
-	#	picon = None
-	#	default = True
-	#	doUpdate = True
-		# TODO: Use Twisted's URL fetcher, urlopen is evil. And it can
-		# run in parallel to the package update.
-	#	try:
-	#		urlopenSTATUS = "http://status.teamblue.tech/index.php"
-	#		d = urlopen(urlopenSTATUS)
-	#		tmpStatus = d.read()
-	#		if config.softwareupdate.updatebeta.getValue() and 'gelb.png' in tmpStatus:
-	#			message = _("Caution update not tested yet !!") + "\n" + _("Update at your own risk") + "\n\n" + _("For more information see http://www.teamblue.tech") + "\n\n"# + _("Last Status Date") + ": "  + statusDate + "\n\n"
-	#			picon = MessageBox.TYPE_ERROR
-	#			default = False
-	#		elif 'rot.png' in tmpStatus:
-	#			if config.softwareupdate.updateisunstable.getValue():
-	#				message = _("Update is reported as faulty !!") + "\n" + _("But you have activated \"Install unstable updates\"") + "\n" + _("Update anyway?")# + "\n\n" + _("Last Status Date") + ": " + statusDate
-	#				picon = MessageBox.TYPE_ERROR
-	#				default = False
-	#			else:
-	#				message = _("Update is reported as faulty !!") + "\n" + _("Aborting updateprogress") + "\n\n" + _("For more information see http://www.teamblue.tech")# + "\n\n" + _("Last Status Date") + ": " + statusDate
-	#				picon = MessageBox.TYPE_ERROR
-	#				default = False
-	#				doUpdate = False
-	#	except:
-	#		message = _("The status of the current update could not be checked because http://www.teamblue.tech could not be reached for some reason") + "\n"
-	#		picon = MessageBox.TYPE_ERROR
-	#		default = False
-	#	socket.setdefaulttimeout(currentTimeoutDefault)
-
-	#	if default:
-		        # We'll ask later
-	#	        self.runUpgrade(True)
-	#	else:
-	#		if doUpdate:
-				# Ask for Update, 
-	#			message += _("Do you want to update your Receiver?")+"\n"+_("After pressing OK, please wait!")
-	#			self.session.openWithCallback(self.runUpgrade, MessageBox, message, default = default, picon = picon)
-	#		else:
-				# Don't Update RED LIGHT !!
-	#			self.session.open(MessageBox, message, picon, timeout = 20)
-	#			self.runUpgrade(False)
 
 	def runUpgrade(self, result):
 		self.TraficResult = result
