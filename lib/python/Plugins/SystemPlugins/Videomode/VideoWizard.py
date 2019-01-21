@@ -20,16 +20,8 @@ try:
 except:
 	chipset = "unknown"
 
-try:
-	file = open("/proc/stb/info/boxtype", "r")
-	model = file.readline().strip()
-	file.close()
-except:
-	model = "unknown"
-
 has_rca = False
-hw_type = HardwareInfo().get_device_name()
-if getBoxType() == 'gbquad' or getBoxType() == 'et5x00' or model == 'et6000' or getBoxType() == 'e3hd' or getBoxType() == 'odinm6' or getMachineName() == 'AX-Odin' or getBoxType() == 'ebox7358' or getBoxType() == 'tmnano' or hw_type == 'ultra' or hw_type == "me" or hw_type == "minime" or getBoxType() == 'optimussos1' or getBoxType() == 'optimussos2' or getBoxType() == 'gb800seplus' or getBoxType() == 'gb800ueplus' or model == 'ini-1000ru' or model == 'ini-1000sv':
+if getBoxType() in ('mutant51', 'ax51', 'gb800seplus', 'gb800ueplus', 'gbquad', 'gbquadplus', 'gbipbox', 'gbultra', 'gbultraue', 'gbultraueh', 'gbultrase', 'vuduo2', 'vusolo2', 'vuzero', 'vusolo', 'vuultimo', 'spycat', 'quadbox2400', 'gbx1', 'gbx2', 'gbx3', 'gbx3h'):
 	has_rca = True
 
 class VideoWizardSummary(WizardSummary):
