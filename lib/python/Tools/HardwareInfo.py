@@ -1,4 +1,4 @@
-from Tools.Directories import SCOPE_SKIN, resolveFilename
+from boxbranding import *
 
 hw_info = None
 
