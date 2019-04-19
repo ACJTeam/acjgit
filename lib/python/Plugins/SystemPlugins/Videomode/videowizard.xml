@@ -1,5 +1,11 @@
 <wizard>
 	<step id="inputselection" nextstep="modeselection" timeout="20" timeoutaction="selectnext">
+		<condition>
+self.condition = len(self.listInputChannels()) > 1
+if len(self.listInputChannels()) == 1:
+	self.selection = "DVI"
+	self.inputSelectionMoved()
+		</condition>
 		<text value="Video input selection\n\nPlease press OK if you can see this page on your TV (or select a different input port).\n\nThe next input port will be automatically probed in 20 seconds." />
 		<displaytext value="Select video input with up/down buttons" />
 		<list type="dynamic" source="listInputChannels" evaluation="inputSelectionMade" onselect="inputSelectionMoved" />
@@ -9,6 +15,7 @@ self.clearSelectedKeys()
 self.selectKey("OK")
 		</code>
 	</step>
+
 	<step id="modeselection" nextstep="rateselection" timeout="20" timeoutaction="selectnext">
 		<text value="Video mode selection." />
 		<displaytext value="Select video mode" />
@@ -20,9 +27,10 @@ self.selectKey("DOWN")
 self["portpic"].hide()
 		</code>
 	</step>
-	<step id="rateselection" nextstep="end" timeout="20" timeoutaction="selectnext">
+
+	<step id="rateselection" timeout="20" timeoutaction="selectnext">
 		<condition>
-self.condition = (self.port != "DVI" or self.mode == "PC")
+self.condition = (self.port != "DVI" and not self.port == "RCA" or self.mode == "PC")
 		</condition>
 		<text value="Refresh rate selection." />
 		<displaytext value="Select refresh rate" />
@@ -31,15 +39,6 @@ self.condition = (self.port != "DVI" or self.mode == "PC")
 self.clearSelectedKeys()
 self.selectKey("UP")
 self.selectKey("DOWN")
-		</code>
-	</step>
-	<step id="end">
-		<code>
-self.hw.saveMode(self.port, self.mode, self.rate)
-from Components.config import configfile
-configfile.save()
-self.markDone()
-self.close()
 		</code>
 	</step>
 </wizard>
