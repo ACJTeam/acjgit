@@ -20,9 +20,9 @@ self.selectKey("DOWN")
 self["portpic"].hide()
 		</code>
 	</step>
-	<step id="rateselection" timeout="20" timeoutaction="selectnext">
+	<step id="rateselection" nextstep="end" timeout="20" timeoutaction="selectnext">
 		<condition>
-self.condition = (self.port != "DVI" and not self.port == "RCA" or self.mode == "PC")
+self.condition = (self.port != "DVI" or self.mode == "PC")
 		</condition>
 		<text value="Refresh rate selection." />
 		<displaytext value="Select refresh rate" />
@@ -31,6 +31,15 @@ self.condition = (self.port != "DVI" and not self.port == "RCA" or self.mode == 
 self.clearSelectedKeys()
 self.selectKey("UP")
 self.selectKey("DOWN")
+		</code>
+	</step>
+	<step id="end">
+		<code>
+self.hw.saveMode(self.port, self.mode, self.rate)
+from Components.config import configfile
+configfile.save()
+self.markDone()
+self.close()
 		</code>
 	</step>
 </wizard>
