@@ -1,12 +1,12 @@
-from boxbranding import getBoxType
+from boxbranding import getBoxType, getMachineName
 from Screens.Wizard import WizardSummary
 from Screens.WizardLanguage import WizardLanguage
 from Screens.Rc import Rc
+from Screens.Screen import Screen
 from VideoHardware import video_hw
 
-from Components.Pixmap import Pixmap
+from Components.Pixmap import Pixmap, MovingPixmap, MultiPixmap
 from Components.config import config, ConfigBoolean, configfile
-from Components.SystemInfo import SystemInfo
 
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 from Tools.HardwareInfo import HardwareInfo
